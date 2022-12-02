@@ -1,0 +1,149 @@
+#!/bin/bash
+##########
+# Pre-sets
+USER=<user>
+HOST=<host>
+SERVER=$HOST.<address>
+ACTIVE_DIR=<working_dir>
+SAVE_DIR=<output_dir>
+
+################
+# Default values
+PARTITION=cnode
+# JOB_FILE=submit_job.sbatch
+unset RUN_DIR UPLOAD_DIR DOWNLOAD_DIR JOB_ID CLEAN_TOG RELOAD_TOG
+
+###########
+# functions
+open_session()
+{
+    eval $(ssh-agent -s); ssh-add ~/.ssh/id_rsa; RELOAD_TOG=yes
+}
+
+usage()
+{
+    echo "Usage: $0 [ -r DIRECTORY ] [ -p PARTITION ] [ -j JOB_FILE ] [ -u DIRECTORY ] [ -d DIRECTORY ] [ -x JOB_ID] [-S-c|-X|-h]"
+    exit 1
+}
+
+upload()
+{
+    scp -r $PWD/$1 $USER@$SERVER:~/Documents
+}
+
+check()
+{
+    ssh $USER@$SERVER "squeue -u $USER" | tee $ACTIVE_DIR/Active_Jobs.out
+}
+
+cancel()
+{
+    ssh $USER@$SERVER "scancel $1"
+}
+
+run()
+{
+    ssh $USER@$SERVER "cd Documents/$1; sbatch -p $2 $3"
+}
+
+download()
+{
+    scp -r $USER@$SERVER:~/Documents/$1 $SAVE_DIR
+}
+
+clean()
+{
+    ssh $USER@$SERVER "find . -name 'java.log.*' -type f -delete; rm -r ~/Documents/*; rm -r .matlab/local_cluster_jobs/R2018b/*"
+}
+
+############################
+# Check authentication agent
+ssh-add -l >/dev/null
+if [ "$?" == 2 ]; then
+    echo "Loading authentication agent with $HOST key..."
+    open_session
+fi
+
+#########################
+# Main script starts here
+while getopts 'Sr:p:j:u:d:x:csXh' OPTION; do
+    case $OPTION in
+        S) open_session ;;
+        r) RUN_DIR=$OPTARG ;;
+	    p) PARTITION=$OPTARG ;;
+	    j) JOB_FILE=$OPTARG ;;
+        u) UPLOAD_DIR=$OPTARG ;;
+	    d) DOWNLOAD_DIR=$OPTARG ;;
+        x) JOB_ID=$OPTARG ;;
+	    c) check ;;
+        s) SSH_TOG=yes ;;
+	    X) CLEAN_TOG=yes ;;
+	    h|?) usage ;;
+    esac
+done
+
+if [ $CLEAN_TOG ]; then
+    read -p "Are you sure you want to clean $HOST? [Y/n] " -n 1
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo -n "Cleaning $HOST...  "
+        clean
+        echo "  Done."
+    else
+        echo "  $HOST not cleaned."
+    fi
+fi
+
+if [ $JOB_ID ]; then
+    read -p "Are you sure you want to cancel job $JOB_ID? [Y/n] " -n 1
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo -n "Cancelling job $JOB_ID...  "
+        cancel $JOB_ID
+        echo "  Done."
+    else
+        echo "  Job $JOB_ID not cancelled."
+    fi
+fi
+
+if [ $UPLOAD_DIR ]; then
+    echo "Uploading $UPLOAD_DIR to $HOST"
+    upload $UPLOAD_DIR
+fi
+
+if [ $DOWNLOAD_DIR ]; then
+    echo "Downloading $DOWNLOAD_DIR from $HOST to $SAVE_DIR"
+    download $DOWNLOAD_DIR
+fi
+
+if [ $RUN_DIR ]; then
+    if ssh $USER@$SERVER "[ -d ~/Documents/$RUN_DIR ]"; then
+        read -p "Directory $RUN_DIR already exists on $HOST. Remove and continue? [Y/n] " -n 1
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+            ssh $USER@$SERVER "rm -r ~/Documents/$RUN_DIR"
+            echo "Directory $RUN_DIR removed from $HOST."
+        else
+            echo "Directory $RUN_DIR not removed from $HOST. Aborting run."
+            exit 1
+        fi
+    fi
+    # sbatch file assumes directory name if not specified.
+    if [ ! $JOB_FILE ]; then
+        JOB_FILE=$RUN_DIR.sbatch
+    fi
+    echo "Submitting job..."
+    upload $RUN_DIR
+    run $RUN_DIR $PARTITION $JOB_FILE
+    echo -n "Done.  "
+    echo "Checking $HOST queue:"
+    check
+fi
+
+if [ $SSH_TOG ]; then
+    ssh $USER@$SERVER
+fi
+
+if [ $RELOAD_TOG ]; then
+    bash -i
+fi
