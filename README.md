@@ -1,4 +1,4 @@
-# Chris Norman Utility Scripts
+# Utility Scripts
 
 **Author:** Chris Norman
 
