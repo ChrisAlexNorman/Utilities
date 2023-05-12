@@ -4,4 +4,4 @@
 
 **Contact:** chris.alex.norman@outlook.com
 
-Some scripts I've developed working with Linux systems over several years which I continue to find useful on different projects.
+Repository for useful scripts I develop.
