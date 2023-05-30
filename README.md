@@ -1,7 +1,5 @@
-# Utility Scripts
-
 **Author:** Chris Norman
 
 **Contact:** chris.alex.norman@outlook.com
 
-Repository for useful scripts I develop.
+Repository of code, docs, and data I've produced or am currently working with for convenient storage and access. Not a live project.
