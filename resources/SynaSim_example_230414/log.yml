@@ -1,0 +1,443 @@
+duration: 2.864653
+exception: null
+output: "g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+  warnings.py:31: BioSimulatorsWarning:\n\n\e[33mThe SED document is potentially incorrect.\n\
+  \  - This tool validates XPaths for model changes and variables against their unmodified\
+  \ target models. As a result, this tool does not fully validate these XPaths. These\
+  \ XPaths could be invalidated by changes to their target models.\n  - Model `Ciliberto2003_Morphogenesis`\
+  \ has warnings.\n    - The model file `BIOMD0000000297_url.xml` has warnings.\n\
+  \      - 3 warnings of type SBO term consistency (10713). The following is the first\
+  \ warning at line 211, column 6:\n        - The value of the 'sboTerm' attribute\
+  \ on a <species> is expected to be an SBO identifier (http://www.biomodels.net/SBO/).\
+  \ In SBML Level 2 prior to Version 4 it is expected to refer to a participant physical\
+  \ type (i.e., terms derived from SBO:0000236, \"participant physical type\"); in\
+  \ Versions 4 and above it is expected to refer to a material entity (i.e., terms\
+  \ derived from SBO:0000240, \"material entity\").\n          Reference: L2V4 Section\
+  \ 5\n           SBO term 'SBO:0000014' on the <species> is not in the appropriate\
+  \ branch.\n      - 9 warnings of type SBO term consistency (10703). The following\
+  \ is the first warning at line 405, column 6:\n        - The value of the 'sboTerm'\
+  \ attribute on a <parameter> is expected to be an SBO identifier (http://www.biomodels.net/SBO/)\
+  \ referring to a quantitative parameter defined in SBO (i.e., terms derived from\
+  \ SBO:0000002, \"quantitative systems description parameter\"). \n          Reference:\
+  \ L2V4 Sections 4.9.5 and 5\n           SBO term 'SBO:0000336' on the <parameter>\
+  \ is not in the appropriate branch.\n      - 67 warnings of type SBML unit consistency\
+  \ (99505). The following is the first warning at line 440, column 6:\n        -\
+  \ In situations where a mathematical expression contains literal numbers or parameters\
+  \ whose units have not been declared, it is not possible to verify accurately the\
+  \ consistency of the units in the expression. \n           The units of the <assignmentRule>\
+  \ <math> expression 'kswe_prime * Swe1 + kswe_doubleprime * Swe1M + kswe_tripleprime\
+  \ * PSwe1' cannot be fully checked. Unit consistency reported as either no errors\
+  \ or further unit errors related to this object may not be accurate.\n      - 81\
+  \ warnings of type Modeling practice (80701). The following is the first warning\
+  \ at line 357, column 6:\n        - As a principle of best modeling practice, the\
+  \ units of a <parameter> should be declared rather than be left undefined. Doing\
+  \ so improves the ability of software to check the consistency of units and helps\
+  \ make it easier to detect potential errors in models.\n           The <parameter>\
+  \ with the id 'kswe' does not have a 'units' attribute.\e[0m\n\ng:\\OneDrive\\Documents\\\
+  UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\warnings.py:31: BioSimulatorsWarning:\n\
+  \n\e[33mThe COMBINE/OMEX archive has warnings.\n  - The SED-ML file at location\
+  \ `./simulation_1.sedml` has warnings.\n    - This tool validates XPaths for model\
+  \ changes and variables against their unmodified target models. As a result, this\
+  \ tool does not fully validate these XPaths. These XPaths could be invalidated by\
+  \ changes to their target models.\n    - Model `Ciliberto2003_Morphogenesis` has\
+  \ warnings.\n      - The model file `BIOMD0000000297_url.xml` has warnings.\n  \
+  \      - 3 warnings of type SBO term consistency (10713). The following is the first\
+  \ warning at line 211, column 6:\n          - The value of the 'sboTerm' attribute\
+  \ on a <species> is expected to be an SBO identifier (http://www.biomodels.net/SBO/).\
+  \ In SBML Level 2 prior to Version 4 it is expected to refer to a participant physical\
+  \ type (i.e., terms derived from SBO:0000236, \"participant physical type\"); in\
+  \ Versions 4 and above it is expected to refer to a material entity (i.e., terms\
+  \ derived from SBO:0000240, \"material entity\").\n            Reference: L2V4 Section\
+  \ 5\n             SBO term 'SBO:0000014' on the <species> is not in the appropriate\
+  \ branch.\n        - 9 warnings of type SBO term consistency (10703). The following\
+  \ is the first warning at line 405, column 6:\n          - The value of the 'sboTerm'\
+  \ attribute on a <parameter> is expected to be an SBO identifier (http://www.biomodels.net/SBO/)\
+  \ referring to a quantitative parameter defined in SBO (i.e., terms derived from\
+  \ SBO:0000002, \"quantitative systems description parameter\"). \n            Reference:\
+  \ L2V4 Sections 4.9.5 and 5\n             SBO term 'SBO:0000336' on the <parameter>\
+  \ is not in the appropriate branch.\n        - 67 warnings of type SBML unit consistency\
+  \ (99505). The following is the first warning at line 440, column 6:\n         \
+  \ - In situations where a mathematical expression contains literal numbers or parameters\
+  \ whose units have not been declared, it is not possible to verify accurately the\
+  \ consistency of the units in the expression. \n             The units of the <assignmentRule>\
+  \ <math> expression 'kswe_prime * Swe1 + kswe_doubleprime * Swe1M + kswe_tripleprime\
+  \ * PSwe1' cannot be fully checked. Unit consistency reported as either no errors\
+  \ or further unit errors related to this object may not be accurate.\n        -\
+  \ 81 warnings of type Modeling practice (80701). The following is the first warning\
+  \ at line 357, column 6:\n          - As a principle of best modeling practice,\
+  \ the units of a <parameter> should be declared rather than be left undefined. Doing\
+  \ so improves the ability of software to check the consistency of units and helps\
+  \ make it easier to detect potential errors in models.\n             The <parameter>\
+  \ with the id 'kswe' does not have a 'units' attribute.\e[0m\n\ng:\\OneDrive\\Documents\\\
+  UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\warnings.py:31: BioSimulatorsWarning:\n\
+  \n\e[33mThe SED document is potentially incorrect.\n  - This tool validates XPaths\
+  \ for model changes and variables against their unmodified target models. As a result,\
+  \ this tool does not fully validate these XPaths. These XPaths could be invalidated\
+  \ by changes to their target models.\e[0m\n\nArchive contains 1 SED-ML documents\
+  \ with 1 models, 1 simulations, 1 tasks, 1 reports, and 4 plots:\n  simulation_1.sedml:\n\
+  \    Tasks (1):\n      task_1\n    Reports (1):\n      report: 21 data sets\n  \
+  \  Plots (4):\n      Figure_3a: 4 curves\n      Figure_3b: 4 curves\n      Figure_3c:\
+  \ 4 curves\n      Figure_3d: 1 curves\n\nExecuting SED-ML file 1: simulation_1.sedml\
+  \ ...\n  Found 1 tasks and 5 outputs:\n    Tasks:\n      `task_1`\n    Outputs:\n\
+  \      `Figure_3a`\n      `Figure_3b`\n      `Figure_3c`\n      `Figure_3d`\n  \
+  \    `report`\n  Executing task 1: `task_1`\n    Executing simulation ...g:\\OneDrive\\\
+  Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\warnings.py:31:\
+  \ BioSimulatorsWarning:\n\n\e[33m- Variable `var_SBF` has warnings.\n  - XPath could\
+  \ not be validated.\n- Variable `var_Clb` has warnings.\n  - XPath could not be\
+  \ validated.\n- Variable `var_Cdc20` has warnings.\n  - XPath could not be validated.\n\
+  - Variable `var_PTrim` has warnings.\n  - XPath could not be validated.\n- Variable\
+  \ `var_Cdh1` has warnings.\n  - XPath could not be validated.\n- Variable `var_PSwe1`\
+  \ has warnings.\n  - XPath could not be validated.\n- Variable `var_Swe1T_Swe1M`\
+  \ has warnings.\n  - XPath could not be validated.\n- Variable `var_PClb` has warnings.\n\
+  \  - XPath could not be validated.\n- Variable `var_Sic` has warnings.\n  - XPath\
+  \ could not be validated.\n- Variable `var_Mih1a` has warnings.\n  - XPath could\
+  \ not be validated.\n- Variable `var_Swe1T_PSwe1M` has warnings.\n  - XPath could\
+  \ not be validated.\n- Variable `var_IE` has warnings.\n  - XPath could not be validated.\n\
+  - Variable `var_Cdc20a` has warnings.\n  - XPath could not be validated.\n- Variable\
+  \ `var_mass` has warnings.\n  - XPath could not be validated.\n- Variable `var_Mcm`\
+  \ has warnings.\n  - XPath could not be validated.\n- Variable `var_Swe1T_Swe1`\
+  \ has warnings.\n  - XPath could not be validated.\n- Variable `var_Swe1M` has warnings.\n\
+  \  - XPath could not be validated.\n- Variable `var_Cln` has warnings.\n  - XPath\
+  \ could not be validated.\n- Variable `var_PSwe1M` has warnings.\n  - XPath could\
+  \ not be validated.\n- Variable `var_Swe1T_PSwe1` has warnings.\n  - XPath could\
+  \ not be validated.\n- Variable `var_Trim` has warnings.\n  - XPath could not be\
+  \ validated.\n- Variable `var_BE` has warnings.\n  - XPath could not be validated.\n\
+  - Variable `var_Swe1` has warnings.\n  - XPath could not be validated.\e[0m\n\n\
+  g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+  warnings.py:31: BioSimulatorsWarning:\n\n\e[33mModel `Ciliberto2003_Morphogenesis`\
+  \ may be invalid.\n  - The model file `C:\\Users\\Chris\\AppData\\Local\\Temp\\\
+  tmpbnmafgad\\tmp7j28lfnc.xml` has warnings.\n    - 3 warnings of type SBO term consistency\
+  \ (10713). The following is the first warning at line 211, column 6:\n      - The\
+  \ value of the 'sboTerm' attribute on a <species> is expected to be an SBO identifier\
+  \ (http://www.biomodels.net/SBO/). In SBML Level 2 prior to Version 4 it is expected\
+  \ to refer to a participant physical type (i.e., terms derived from SBO:0000236,\
+  \ \"participant physical type\"); in Versions 4 and above it is expected to refer\
+  \ to a material entity (i.e., terms derived from SBO:0000240, \"material entity\"\
+  ).\n        Reference: L2V4 Section 5\n         SBO term 'SBO:0000014' on the <species>\
+  \ is not in the appropriate branch.\n    - 9 warnings of type SBO term consistency\
+  \ (10703). The following is the first warning at line 405, column 6:\n      - The\
+  \ value of the 'sboTerm' attribute on a <parameter> is expected to be an SBO identifier\
+  \ (http://www.biomodels.net/SBO/) referring to a quantitative parameter defined\
+  \ in SBO (i.e., terms derived from SBO:0000002, \"quantitative systems description\
+  \ parameter\"). \n        Reference: L2V4 Sections 4.9.5 and 5\n         SBO term\
+  \ 'SBO:0000336' on the <parameter> is not in the appropriate branch.\n    - 67 warnings\
+  \ of type SBML unit consistency (99505). The following is the first warning at line\
+  \ 440, column 6:\n      - In situations where a mathematical expression contains\
+  \ literal numbers or parameters whose units have not been declared, it is not possible\
+  \ to verify accurately the consistency of the units in the expression. \n      \
+  \   The units of the <assignmentRule> <math> expression 'kswe_prime * Swe1 + kswe_doubleprime\
+  \ * Swe1M + kswe_tripleprime * PSwe1' cannot be fully checked. Unit consistency\
+  \ reported as either no errors or further unit errors related to this object may\
+  \ not be accurate.\n    - 81 warnings of type Modeling practice (80701). The following\
+  \ is the first warning at line 357, column 6:\n      - As a principle of best modeling\
+  \ practice, the units of a <parameter> should be declared rather than be left undefined.\
+  \ Doing so improves the ability of software to check the consistency of units and\
+  \ helps make it easier to detect potential errors in models.\n         The <parameter>\
+  \ with the id 'kswe' does not have a 'units' attribute.\e[0m\n\n \e[34msucceeded\e\
+  [0m\n    Generating 5 outputs ...\n      Generating output 1: `report` ... \e[34msucceeded\e\
+  [0m\n      Generating output 2: `Figure_3a` ...g:\\OneDrive\\Documents\\UCL\\SynaSim\\\
+  .venv\\lib\\site-packages\\biosimulators_utils\\warnings.py:31: IllogicalVizWarning:\n\
+  \n\e[33mA title could not be inferred for the Y axis because the Y data generators\
+  \ have inconsistent names.\e[0m\n\n \e[34msucceeded\e[0m\n      Generating output\
+  \ 3: `Figure_3b` ...g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\\
+  biosimulators_utils\\warnings.py:31: IllogicalVizWarning:\n\n\e[33mA title could\
+  \ not be inferred for the Y axis because the Y data generators have inconsistent\
+  \ names.\e[0m\n\n \e[34msucceeded\e[0m\n      Generating output 4: `Figure_3c` ...g:\\\
+  OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+  warnings.py:31: IllogicalVizWarning:\n\n\e[33mA title could not be inferred for\
+  \ the Y axis because the Y data generators have inconsistent names.\e[0m\n\n \e\
+  [34msucceeded\e[0m\n      Generating output 5: `Figure_3d` ... \e[34msucceeded\e\
+  [0m\n\n  Executed 1 tasks and 5 outputs:\n    Tasks:\n      Succeeded: 1\n     \
+  \ Skipped: 0\n      Failed: 0\n    Outputs:\n      Succeeded: 5\n      Skipped:\
+  \ 0\n      Failed: 0\n\nBundling outputs ...\nCleaning up ...\n\n============= SUMMARY\
+  \ =============\nExecuted 1 SED documents:\n  SED documents (1):\n    Succeeded:\
+  \ 1\n    Skipped: 0\n    Failed: 0\n  Tasks (1):\n    Succeeded: 1\n    Skipped:\
+  \ 0\n    Failed: 0\n  Outputs (5):\n    Succeeded: 5\n    Skipped: 0\n    Failed:\
+  \ 0\n\n"
+sedDocuments:
+- duration: 2.698492
+  exception: null
+  location: simulation_1.sedml
+  output: "  Found 1 tasks and 5 outputs:\n    Tasks:\n      `task_1`\n    Outputs:\n\
+    \      `Figure_3a`\n      `Figure_3b`\n      `Figure_3c`\n      `Figure_3d`\n\
+    \      `report`\n  Executing task 1: `task_1`\n    Executing simulation ...g:\\\
+    OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+    warnings.py:31: BioSimulatorsWarning:\n\n\e[33m- Variable `var_SBF` has warnings.\n\
+    \  - XPath could not be validated.\n- Variable `var_Clb` has warnings.\n  - XPath\
+    \ could not be validated.\n- Variable `var_Cdc20` has warnings.\n  - XPath could\
+    \ not be validated.\n- Variable `var_PTrim` has warnings.\n  - XPath could not\
+    \ be validated.\n- Variable `var_Cdh1` has warnings.\n  - XPath could not be validated.\n\
+    - Variable `var_PSwe1` has warnings.\n  - XPath could not be validated.\n- Variable\
+    \ `var_Swe1T_Swe1M` has warnings.\n  - XPath could not be validated.\n- Variable\
+    \ `var_PClb` has warnings.\n  - XPath could not be validated.\n- Variable `var_Sic`\
+    \ has warnings.\n  - XPath could not be validated.\n- Variable `var_Mih1a` has\
+    \ warnings.\n  - XPath could not be validated.\n- Variable `var_Swe1T_PSwe1M`\
+    \ has warnings.\n  - XPath could not be validated.\n- Variable `var_IE` has warnings.\n\
+    \  - XPath could not be validated.\n- Variable `var_Cdc20a` has warnings.\n  -\
+    \ XPath could not be validated.\n- Variable `var_mass` has warnings.\n  - XPath\
+    \ could not be validated.\n- Variable `var_Mcm` has warnings.\n  - XPath could\
+    \ not be validated.\n- Variable `var_Swe1T_Swe1` has warnings.\n  - XPath could\
+    \ not be validated.\n- Variable `var_Swe1M` has warnings.\n  - XPath could not\
+    \ be validated.\n- Variable `var_Cln` has warnings.\n  - XPath could not be validated.\n\
+    - Variable `var_PSwe1M` has warnings.\n  - XPath could not be validated.\n- Variable\
+    \ `var_Swe1T_PSwe1` has warnings.\n  - XPath could not be validated.\n- Variable\
+    \ `var_Trim` has warnings.\n  - XPath could not be validated.\n- Variable `var_BE`\
+    \ has warnings.\n  - XPath could not be validated.\n- Variable `var_Swe1` has\
+    \ warnings.\n  - XPath could not be validated.\e[0m\n\ng:\\OneDrive\\Documents\\\
+    UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\warnings.py:31:\
+    \ BioSimulatorsWarning:\n\n\e[33mModel `Ciliberto2003_Morphogenesis` may be invalid.\n\
+    \  - The model file `C:\\Users\\Chris\\AppData\\Local\\Temp\\tmpbnmafgad\\tmp7j28lfnc.xml`\
+    \ has warnings.\n    - 3 warnings of type SBO term consistency (10713). The following\
+    \ is the first warning at line 211, column 6:\n      - The value of the 'sboTerm'\
+    \ attribute on a <species> is expected to be an SBO identifier (http://www.biomodels.net/SBO/).\
+    \ In SBML Level 2 prior to Version 4 it is expected to refer to a participant\
+    \ physical type (i.e., terms derived from SBO:0000236, \"participant physical\
+    \ type\"); in Versions 4 and above it is expected to refer to a material entity\
+    \ (i.e., terms derived from SBO:0000240, \"material entity\").\n        Reference:\
+    \ L2V4 Section 5\n         SBO term 'SBO:0000014' on the <species> is not in the\
+    \ appropriate branch.\n    - 9 warnings of type SBO term consistency (10703).\
+    \ The following is the first warning at line 405, column 6:\n      - The value\
+    \ of the 'sboTerm' attribute on a <parameter> is expected to be an SBO identifier\
+    \ (http://www.biomodels.net/SBO/) referring to a quantitative parameter defined\
+    \ in SBO (i.e., terms derived from SBO:0000002, \"quantitative systems description\
+    \ parameter\"). \n        Reference: L2V4 Sections 4.9.5 and 5\n         SBO term\
+    \ 'SBO:0000336' on the <parameter> is not in the appropriate branch.\n    - 67\
+    \ warnings of type SBML unit consistency (99505). The following is the first warning\
+    \ at line 440, column 6:\n      - In situations where a mathematical expression\
+    \ contains literal numbers or parameters whose units have not been declared, it\
+    \ is not possible to verify accurately the consistency of the units in the expression.\
+    \ \n         The units of the <assignmentRule> <math> expression 'kswe_prime *\
+    \ Swe1 + kswe_doubleprime * Swe1M + kswe_tripleprime * PSwe1' cannot be fully\
+    \ checked. Unit consistency reported as either no errors or further unit errors\
+    \ related to this object may not be accurate.\n    - 81 warnings of type Modeling\
+    \ practice (80701). The following is the first warning at line 357, column 6:\n\
+    \      - As a principle of best modeling practice, the units of a <parameter>\
+    \ should be declared rather than be left undefined. Doing so improves the ability\
+    \ of software to check the consistency of units and helps make it easier to detect\
+    \ potential errors in models.\n         The <parameter> with the id 'kswe' does\
+    \ not have a 'units' attribute.\e[0m\n\n \e[34msucceeded\e[0m\n    Generating\
+    \ 5 outputs ...\n      Generating output 1: `report` ... \e[34msucceeded\e[0m\n\
+    \      Generating output 2: `Figure_3a` ...g:\\OneDrive\\Documents\\UCL\\SynaSim\\\
+    .venv\\lib\\site-packages\\biosimulators_utils\\warnings.py:31: IllogicalVizWarning:\n\
+    \n\e[33mA title could not be inferred for the Y axis because the Y data generators\
+    \ have inconsistent names.\e[0m\n\n \e[34msucceeded\e[0m\n      Generating output\
+    \ 3: `Figure_3b` ...g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\\
+    biosimulators_utils\\warnings.py:31: IllogicalVizWarning:\n\n\e[33mA title could\
+    \ not be inferred for the Y axis because the Y data generators have inconsistent\
+    \ names.\e[0m\n\n \e[34msucceeded\e[0m\n      Generating output 4: `Figure_3c`\
+    \ ...g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+    warnings.py:31: IllogicalVizWarning:\n\n\e[33mA title could not be inferred for\
+    \ the Y axis because the Y data generators have inconsistent names.\e[0m\n\n \e\
+    [34msucceeded\e[0m\n      Generating output 5: `Figure_3d` ... \e[34msucceeded\e\
+    [0m\n\n  Executed 1 tasks and 5 outputs:\n    Tasks:\n      Succeeded: 1\n   \
+    \   Skipped: 0\n      Failed: 0\n    Outputs:\n      Succeeded: 5\n      Skipped:\
+    \ 0\n      Failed: 0\n"
+  outputs:
+  - dataSets:
+    - id: data_set_time
+      status: SUCCEEDED
+    - id: data_set_Cdc20a
+      status: SUCCEEDED
+    - id: data_set_BE
+      status: SUCCEEDED
+    - id: data_set_Cdc20
+      status: SUCCEEDED
+    - id: data_set_Trim
+      status: SUCCEEDED
+    - id: data_set_Cdh1
+      status: SUCCEEDED
+    - id: data_set_Clb
+      status: SUCCEEDED
+    - id: data_set_Cln
+      status: SUCCEEDED
+    - id: data_set_IE
+      status: SUCCEEDED
+    - id: data_set_mass
+      status: SUCCEEDED
+    - id: data_set_Mcm
+      status: SUCCEEDED
+    - id: data_set_Mih1a
+      status: SUCCEEDED
+    - id: data_set_Swe1M
+      status: SUCCEEDED
+    - id: data_set_PTrim
+      status: SUCCEEDED
+    - id: data_set_PClb
+      status: SUCCEEDED
+    - id: data_set_PSwe1
+      status: SUCCEEDED
+    - id: data_set_PSwe1M
+      status: SUCCEEDED
+    - id: data_set_SBF
+      status: SUCCEEDED
+    - id: data_set_Sic
+      status: SUCCEEDED
+    - id: data_set_Swe1
+      status: SUCCEEDED
+    - id: data_set_Swe1T
+      status: SUCCEEDED
+    duration: 0.124497
+    exception: null
+    id: report
+    output: ''
+    skipReason: null
+    status: SUCCEEDED
+  - curves:
+    - id: curve_Figure_3a_Sic
+      status: SUCCEEDED
+    - id: curve_Figure_3a_SBF
+      status: SUCCEEDED
+    - id: curve_Figure_3a_Clb
+      status: SUCCEEDED
+    - id: curve_Figure_3a_Cln
+      status: SUCCEEDED
+    duration: 1.059448
+    exception: null
+    id: Figure_3a
+    output: "g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+      warnings.py:31: IllogicalVizWarning:\n\n\e[33mA title could not be inferred\
+      \ for the Y axis because the Y data generators have inconsistent names.\e[0m\n\
+      \n"
+    skipReason: null
+    status: SUCCEEDED
+  - curves:
+    - id: curve_Figure_3b_Cdc20a
+      status: SUCCEEDED
+    - id: curve_Figure_3b_Cdh1
+      status: SUCCEEDED
+    - id: curve_Figure_3b_Clb
+      status: SUCCEEDED
+    - id: curve_Figure_3b_IE
+      status: SUCCEEDED
+    duration: 0.165168
+    exception: null
+    id: Figure_3b
+    output: "g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+      warnings.py:31: IllogicalVizWarning:\n\n\e[33mA title could not be inferred\
+      \ for the Y axis because the Y data generators have inconsistent names.\e[0m\n\
+      \n"
+    skipReason: null
+    status: SUCCEEDED
+  - curves:
+    - id: curve_Figure_3c_Swe1
+      status: SUCCEEDED
+    - id: curve_Figure_3c_Swe1M
+      status: SUCCEEDED
+    - id: curve_Figure_3c_Swe1T
+      status: SUCCEEDED
+    - id: curve_Figure_3c_PSwe1M
+      status: SUCCEEDED
+    duration: 0.130633
+    exception: null
+    id: Figure_3c
+    output: "g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+      warnings.py:31: IllogicalVizWarning:\n\n\e[33mA title could not be inferred\
+      \ for the Y axis because the Y data generators have inconsistent names.\e[0m\n\
+      \n"
+    skipReason: null
+    status: SUCCEEDED
+  - curves:
+    - id: curve_Figure_3d_mass
+      status: SUCCEEDED
+    duration: 0.067456
+    exception: null
+    id: Figure_3d
+    output: ''
+    skipReason: null
+    status: SUCCEEDED
+  skipReason: null
+  status: SUCCEEDED
+  tasks:
+  - algorithm: KISAO_0000019
+    duration: 1.019852
+    exception: null
+    id: task_1
+    output: "g:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\biosimulators_utils\\\
+      warnings.py:31: BioSimulatorsWarning:\n\n\e[33m- Variable `var_SBF` has warnings.\n\
+      \  - XPath could not be validated.\n- Variable `var_Clb` has warnings.\n  -\
+      \ XPath could not be validated.\n- Variable `var_Cdc20` has warnings.\n  - XPath\
+      \ could not be validated.\n- Variable `var_PTrim` has warnings.\n  - XPath could\
+      \ not be validated.\n- Variable `var_Cdh1` has warnings.\n  - XPath could not\
+      \ be validated.\n- Variable `var_PSwe1` has warnings.\n  - XPath could not be\
+      \ validated.\n- Variable `var_Swe1T_Swe1M` has warnings.\n  - XPath could not\
+      \ be validated.\n- Variable `var_PClb` has warnings.\n  - XPath could not be\
+      \ validated.\n- Variable `var_Sic` has warnings.\n  - XPath could not be validated.\n\
+      - Variable `var_Mih1a` has warnings.\n  - XPath could not be validated.\n- Variable\
+      \ `var_Swe1T_PSwe1M` has warnings.\n  - XPath could not be validated.\n- Variable\
+      \ `var_IE` has warnings.\n  - XPath could not be validated.\n- Variable `var_Cdc20a`\
+      \ has warnings.\n  - XPath could not be validated.\n- Variable `var_mass` has\
+      \ warnings.\n  - XPath could not be validated.\n- Variable `var_Mcm` has warnings.\n\
+      \  - XPath could not be validated.\n- Variable `var_Swe1T_Swe1` has warnings.\n\
+      \  - XPath could not be validated.\n- Variable `var_Swe1M` has warnings.\n \
+      \ - XPath could not be validated.\n- Variable `var_Cln` has warnings.\n  - XPath\
+      \ could not be validated.\n- Variable `var_PSwe1M` has warnings.\n  - XPath\
+      \ could not be validated.\n- Variable `var_Swe1T_PSwe1` has warnings.\n  - XPath\
+      \ could not be validated.\n- Variable `var_Trim` has warnings.\n  - XPath could\
+      \ not be validated.\n- Variable `var_BE` has warnings.\n  - XPath could not\
+      \ be validated.\n- Variable `var_Swe1` has warnings.\n  - XPath could not be\
+      \ validated.\e[0m\n\ng:\\OneDrive\\Documents\\UCL\\SynaSim\\.venv\\lib\\site-packages\\\
+      biosimulators_utils\\warnings.py:31: BioSimulatorsWarning:\n\n\e[33mModel `Ciliberto2003_Morphogenesis`\
+      \ may be invalid.\n  - The model file `C:\\Users\\Chris\\AppData\\Local\\Temp\\\
+      tmpbnmafgad\\tmp7j28lfnc.xml` has warnings.\n    - 3 warnings of type SBO term\
+      \ consistency (10713). The following is the first warning at line 211, column\
+      \ 6:\n      - The value of the 'sboTerm' attribute on a <species> is expected\
+      \ to be an SBO identifier (http://www.biomodels.net/SBO/). In SBML Level 2 prior\
+      \ to Version 4 it is expected to refer to a participant physical type (i.e.,\
+      \ terms derived from SBO:0000236, \"participant physical type\"); in Versions\
+      \ 4 and above it is expected to refer to a material entity (i.e., terms derived\
+      \ from SBO:0000240, \"material entity\").\n        Reference: L2V4 Section 5\n\
+      \         SBO term 'SBO:0000014' on the <species> is not in the appropriate\
+      \ branch.\n    - 9 warnings of type SBO term consistency (10703). The following\
+      \ is the first warning at line 405, column 6:\n      - The value of the 'sboTerm'\
+      \ attribute on a <parameter> is expected to be an SBO identifier (http://www.biomodels.net/SBO/)\
+      \ referring to a quantitative parameter defined in SBO (i.e., terms derived\
+      \ from SBO:0000002, \"quantitative systems description parameter\"). \n    \
+      \    Reference: L2V4 Sections 4.9.5 and 5\n         SBO term 'SBO:0000336' on\
+      \ the <parameter> is not in the appropriate branch.\n    - 67 warnings of type\
+      \ SBML unit consistency (99505). The following is the first warning at line\
+      \ 440, column 6:\n      - In situations where a mathematical expression contains\
+      \ literal numbers or parameters whose units have not been declared, it is not\
+      \ possible to verify accurately the consistency of the units in the expression.\
+      \ \n         The units of the <assignmentRule> <math> expression 'kswe_prime\
+      \ * Swe1 + kswe_doubleprime * Swe1M + kswe_tripleprime * PSwe1' cannot be fully\
+      \ checked. Unit consistency reported as either no errors or further unit errors\
+      \ related to this object may not be accurate.\n    - 81 warnings of type Modeling\
+      \ practice (80701). The following is the first warning at line 357, column 6:\n\
+      \      - As a principle of best modeling practice, the units of a <parameter>\
+      \ should be declared rather than be left undefined. Doing so improves the ability\
+      \ of software to check the consistency of units and helps make it easier to\
+      \ detect potential errors in models.\n         The <parameter> with the id 'kswe'\
+      \ does not have a 'units' attribute.\e[0m\n\n"
+    simulatorDetails:
+    - key: method
+      value: simulate
+    - key: solver
+      value: cvode
+    - key: relative_tolerance
+      value: 1.0e-06
+    - key: absolute_tolerance
+      value: 1.0e-12
+    - key: stiff
+      value: true
+    - key: maximum_bdf_order
+      value: 5
+    - key: maximum_adams_order
+      value: 12
+    - key: maximum_num_steps
+      value: 20000
+    - key: maximum_time_step
+      value: 0.0
+    - key: minimum_time_step
+      value: 0.0
+    - key: initial_time_step
+      value: 0.0
+    - key: multiple_steps
+      value: false
+    - key: variable_step_size
+      value: false
+    - key: max_output_rows
+      value: 100000
+    skipReason: null
+    status: SUCCEEDED
+skipReason: null
+status: SUCCEEDED
